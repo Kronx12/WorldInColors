@@ -3,8 +3,8 @@
 int main()
 {
 	char ch;
-	t_color *c = newColor(bGREY, fPURPLE, BOLD);
-	t_color *title = newColor(bGREY, fPURPLE, INVERT);
+	t_color *c = newColor(bGREY, fGREEN, BOLD);
+	t_color *title = newColor(bGREEN, fCYAN, INVERT);
 	t_color *o = newColor(bBLUE, fWHITE, BOLD);
 	
 	printNextLine(c, 2);
@@ -14,9 +14,9 @@ int main()
 	autoLine("A) Option A", o, LEFT);
 	autoLine("B) Option B", o, LEFT);
 	printNextLine(o, 2);
-	ch = getc(2);
-	if (ch == 'A' || ch == 'a')
-		return 1;
+	//ch = getc(2);
+	//if (ch == 'A' || ch == 'a')
+//		return 1;
 
 	return 0;
 }

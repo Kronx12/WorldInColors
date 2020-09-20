@@ -72,7 +72,7 @@ char	*strtoupper(char *str)
 	char *res = malloc((strlen(str) + 1) * sizeof(char));
 	char *dest = res;
 
-	while(*res++ = toupper(*str++));
+	while((*res++ = toupper(*str++)));
 	return dest;
 }
 
